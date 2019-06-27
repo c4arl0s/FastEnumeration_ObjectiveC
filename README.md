@@ -40,11 +40,16 @@ for ( classType variable in expression )
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    NSArray *array = [NSArray arrayWithObjects:@"valvula", @"regulador", @"manometro", nil];
-    for (NSString *element in array) {
-        NSLog(@"product: %@", element);
+    // Fast Enumeration Forward with Array
+    NSArray *products = [NSArray arrayWithObjects:@"valvula", @"regulador", @"manometro", nil];
+    for (NSString *product in products) {
+        NSLog(@"product: %@", product);
     }
+    
 }
+
+
+@end
 ```
 
 
