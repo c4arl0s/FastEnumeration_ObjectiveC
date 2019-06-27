@@ -20,7 +20,7 @@ for ( classType variable in expression )
 
 # Fast Enumeration Forward with Array
 
-``` obejctive-c
+``` objective-c
 //
 //  ViewController.m
 //  FastEnumerationForwardWithArray
