@@ -20,10 +20,43 @@ for ( classType variable in expression )
 
 # Fast Enumeration Forward with Array
 
-``` objective-c
-NSArray *array = [NSArray arrayWithObjects: @"Valvulas", @"Reguladores", @"manometros", nil];
+``` obejctive-c
+//
+//  ViewController.m
+//  FastEnumerationForwardWithArray
+//
+//  Created by Carlos Santiago Cruz on 6/27/19.
+//  Copyright © 2019 Carlos Santiago Cruz. All rights reserved.
+//
 
+#import "ViewController.h"
+
+@interface ViewController ()
+
+@end
+
+@implementation ViewController
+
+- (void)viewDidLoad {
+    [super viewDidLoad];
+    
+    NSArray *array = [NSArray arrayWithObjects:@"valvula", @"regulador", @"manometro", nil];
+    for (NSString *element in array) {
+        NSLog(@"product: %@", element);
+    }
+}
 ```
+
+
+``` console
+2019-06-27 01:13:49.190803-0500 FastEnumerationForwardWithArray[1774:147030] product: valvula
+2019-06-27 01:13:49.191099-0500 FastEnumerationForwardWithArray[1774:147030] product: regulador
+2019-06-27 01:13:49.191287-0500 FastEnumerationForwardWithArray[1774:147030] product: manometro
+```
+
+
+
+@end
 
 
 
